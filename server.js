@@ -49,7 +49,7 @@ app.post("/hook", async (req, res) => {
 
 // Self ping to keep Render awake
 setInterval(() => {
-  axios.get("https://your-render-url.onrender.com/")
+  axios.get("https://backend-udgf.onrender.com/")
     .then(() => console.log("Self-ping successful"))
     .catch(err => console.error("Self-ping failed:", err.message));
 }, 1000 * 60 * 14); // Every 14 mins
